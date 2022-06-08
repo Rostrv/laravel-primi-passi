@@ -85,7 +85,7 @@
 
 <body>
     <div class="nav">
-        <a href="{{route('others')}}">Home</a>
+        <a href="{{route('home')}}">Home</a>
         <a href="{{route('others')}}">Others</a>
 
     </div>
