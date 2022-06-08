@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $msg = '"Hello" Laravel';
+    $fullname = 'Rosario Trovato';
+    return view('home', compact('msg', 'fullname'));
+})->name('home');
+
+Route::get('/others', function () {
+    $link = 'https://www.focusjunior.it/content/uploads/site_stored/imgs/0001/023/urlo-munch4.jpg';
+    return view('others', compact('link'));
+})->name('others');
